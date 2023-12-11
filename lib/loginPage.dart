@@ -77,7 +77,7 @@ class LoginPage extends StatelessWidget {
                       child: MaterialButton(
                         elevation: 0,
                         shape: RoundedRectangleBorder(
-                            side: BorderSide(color: Colors.black),
+                            side: BorderSide(color: Colors.grey),
                             borderRadius: BorderRadius.circular(38)),
                         color: Color(0xffFFF),
                         onPressed: () {},
@@ -102,7 +102,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Positioned(
+                  Positioned(
                       top: 390.47,
                       right: 112.73,
                       child: Text(
@@ -112,6 +112,70 @@ class LoginPage extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                             color: Color(0xffA1A4B2)),
                       )),
+                  const Positioned(
+                    top: 447.47,
+                    right: 20,
+                    left: 20,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          filled: true,
+                          fillColor: Color(0xffF2F3F7),
+                          border: InputBorder.none,
+                          label: Text(
+                            'Email address',
+                            strutStyle: StrutStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w300,
+                            ),
+                            style: TextStyle(fontSize: 12),
+                          )),
+                    ),
+                  ),
+                  const Positioned(
+                    top: 527.47,
+                    right: 20,
+                    left: 20,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          filled: true,
+                          fillColor: Color(0xfffF2F3F7),
+                          border: InputBorder.none,
+                          label: Text(
+                            'Password',
+                            style: TextStyle(fontSize: 12),
+                          )),
+                    ),
+                  ),
+                  Positioned(
+                    right: 20,
+                    top: 620.477,
+                    child: ConstrainedBox(
+                      constraints:
+                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      child: MaterialButton(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(38)),
+                        color: const Color(0xff8E97FD),
+                        onPressed: () {},
+                        child: const Text(
+                          'LOG IN',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Positioned(
+                      top: 703.47,
+                      right: 139.73,
+                      child: Text(
+                        'Forgot password?',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400, fontSize: 14),
+                      )),
+
 
                 ],
               ),

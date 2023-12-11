@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meditaition_app/loginPage.dart';
 
@@ -95,6 +96,7 @@ class HomePage extends StatelessWidget {
                   const SizedBox(
                     height: 30,
                   ),
+
                   const Text(
                     'we are what we do',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
