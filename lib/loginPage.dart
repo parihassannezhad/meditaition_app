@@ -1,0 +1,124 @@
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            Expanded(
+              child: Stack(
+                children: [
+                  Image.asset('assets/img/art.png'),
+                  Positioned(
+                      top: 187, child: Image.asset('assets/img/art2.png')),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 50, left: 21),
+                    child: Container(
+                        width: 55,
+                        height: 55,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: const Color(0xffEBEAEC)),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: IconButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            icon: Icon(Icons.arrow_back_outlined))),
+                  ),
+                  const Positioned(
+                      top: 134,
+                      left: 103,
+                      child: Text(
+                        'Welcome Back!',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w700, fontSize: 28),
+                      )),
+                  Positioned(
+                    top: 204.47,
+                    right: 20,
+                    child: ConstrainedBox(
+                      constraints:
+                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      child: MaterialButton(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(38)),
+                        color: const Color(0xff7583CA),
+                        onPressed: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 34.84),
+                              child: Image.asset('assets/img/facebook.png'),
+                            ),
+                            const SizedBox(
+                              width: 45.78,
+                            ),
+                            const Text(
+                              'CONTINUE WITH FACEBOOK',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 287.47,
+                    right: 20,
+                    child: ConstrainedBox(
+                      constraints:
+                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      child: MaterialButton(
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            side: BorderSide(color: Colors.black),
+                            borderRadius: BorderRadius.circular(38)),
+                        color: Color(0xffFFF),
+                        onPressed: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 34.84),
+                              child: Image.asset('assets/img/gmail.png'),
+                            ),
+                            const SizedBox(
+                              width: 45.78,
+                            ),
+                            const Text(
+                              'CONTINUE WITH GOOGLE',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Positioned(
+                      top: 390.47,
+                      right: 112.73,
+                      child: Text(
+                        'OR LOG IN WITH EMAIL',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xffA1A4B2)),
+                      )),
+
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
