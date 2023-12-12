@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditaition_app/timePage.dart';
 
 class titlesPage extends StatelessWidget {
   const titlesPage({super.key});
@@ -6,7 +7,7 @@ class titlesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const SafeArea(
+    return SafeArea(
         child: Scaffold(
           body: SingleChildScrollView(
             child: Column(
@@ -14,32 +15,43 @@ class titlesPage extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 20, top: 76),
-                  child: Text(
-                    'What Brings you',
-                    style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xff3F414E)),
+                  child: Row(
+                    children: [
+                      const Text(
+                        'What Brings you',
+                        style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff3F414E)),
+                      ),
+                      IconButton(
+                          onPressed: () {
+                            Navigator.of(context).push(
+                                MaterialPageRoute(builder: (context) =>
+                                    TimePage()));
+                          },
+                          icon: Icon(Icons.arrow_forward_ios_outlined))
+                    ],
                   ),
                 ),
-                Text(
+                const Text(
                   '   to Silent Moon?',
                   style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w300,
                       color: Color(0xff3F414E)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   '    choose a topic to focuses on:',
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w300,
                       color: Color(0xffA1A4B2)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 // Column(children: [
