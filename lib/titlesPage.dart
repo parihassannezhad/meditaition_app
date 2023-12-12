@@ -6,7 +6,7 @@ class titlesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return SafeArea(
+    return const SafeArea(
         child: Scaffold(
           body: SingleChildScrollView(
             child: Column(
@@ -22,24 +22,24 @@ class titlesPage extends StatelessWidget {
                         color: Color(0xff3F414E)),
                   ),
                 ),
-                const Text(
+                Text(
                   '   to Silent Moon?',
                   style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w300,
                       color: Color(0xff3F414E)),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Text(
+                Text(
                   '    choose a topic to focuses on:',
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w300,
                       color: Color(0xffA1A4B2)),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 30,
                 ),
                 // Column(children: [
