@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 class TimePage extends StatefulWidget {
+  const TimePage({super.key});
+
   @override
   State<TimePage> createState() => _TimePageState();
 }
@@ -16,10 +18,10 @@ class _TimePageState extends State<TimePage> {
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 82,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 260,
                   height: 60,
                   child: Padding(
@@ -33,10 +35,10 @@ class _TimePageState extends State<TimePage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(left: 20, right: 40),
                   child: Text(
                     'Any time you can choose but We recommend first thing in th morning.',
@@ -52,7 +54,7 @@ class _TimePageState extends State<TimePage> {
                     width: 399,
                     height: 212,
                     decoration: BoxDecoration(
-                        color: Color(0xffF5F5F9),
+                        color: const Color(0xffF5F5F9),
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       children: [

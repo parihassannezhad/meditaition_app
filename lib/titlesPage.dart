@@ -14,7 +14,7 @@ class titlesPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 20, top: 76),
+                  padding: const EdgeInsets.only(left: 20, top: 76),
                   child: Row(
                     children: [
                       const Text(
@@ -28,9 +28,9 @@ class titlesPage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                                 MaterialPageRoute(builder: (context) =>
-                                    TimePage()));
+                                    const TimePage()));
                           },
-                          icon: Icon(Icons.arrow_forward_ios_outlined))
+                          icon: const Icon(Icons.arrow_forward_ios_outlined))
                     ],
                   ),
                 ),

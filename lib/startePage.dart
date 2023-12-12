@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meditaition_app/titlesPage.dart';
 
 class StartePage extends StatelessWidget {
+  const StartePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -110,7 +112,7 @@ class StartePage extends StatelessWidget {
                         Navigator
                             .of(context)
                             .push(MaterialPageRoute(
-                            builder: (context) => titlesPage()));
+                            builder: (context) => const titlesPage()));
                       }),
                 ),
               ],
