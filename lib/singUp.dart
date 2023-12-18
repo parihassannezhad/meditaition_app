@@ -16,9 +16,9 @@ class createPage extends StatelessWidget {
                 height: 350.47,
                 child: Stack(
                   children: [
-                    Image.asset('assets/img/frame.png'),
+                    Image.asset('assets/img/art.png'),
                     Positioned(
-                        top: 165, child: Image.asset('assets/img/frame2.png')),
+                        top: 165, child: Image.asset('assets/img/art2.png')),
                     Padding(
                       padding: const EdgeInsets.only(top: 50, left: 19.76),
                       child: Container(
@@ -96,7 +96,7 @@ class createPage extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.only(
                                       left: 38.84, right: 45.78),
-                                  child: Image.asset('assets/img/logo.png'),
+                                  child: Image.asset('assets/img/gmail.png'),
                                 ),
                                 const Text(
                                   'CONTINUE WITH GOOGLE',
