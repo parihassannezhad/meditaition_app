@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:meditaition_app/creatPage.dart';
 import 'package:meditaition_app/loginPage.dart';
 
 void main() {
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: createPage(),
     );
   }
 }
@@ -169,4 +170,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-//

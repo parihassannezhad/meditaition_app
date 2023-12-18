@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditaition_app/singUp.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -41,7 +42,7 @@ class LoginPage extends StatelessWidget {
                     right: 20,
                     child: ConstrainedBox(
                       constraints:
-                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      const BoxConstraints.tightFor(width: 374, height: 63),
                       child: MaterialButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(38)),
@@ -73,7 +74,7 @@ class LoginPage extends StatelessWidget {
                     right: 20,
                     child: ConstrainedBox(
                       constraints:
-                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      const BoxConstraints.tightFor(width: 374, height: 63),
                       child: MaterialButton(
                         elevation: 0,
                         shape: RoundedRectangleBorder(
@@ -151,7 +152,7 @@ class LoginPage extends StatelessWidget {
                     top: 620.477,
                     child: ConstrainedBox(
                       constraints:
-                          const BoxConstraints.tightFor(width: 374, height: 63),
+                      const BoxConstraints.tightFor(width: 374, height: 63),
                       child: MaterialButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(38)),
@@ -171,12 +172,38 @@ class LoginPage extends StatelessWidget {
                       top: 703.47,
                       right: 139.73,
                       child: Text(
-                        'Forgot password?',
+                        'Forgot passwosrdss?',
                         style: TextStyle(
                             fontWeight: FontWeight.w400, fontSize: 14),
                       )),
+                  Positioned(
+                      top: 755,
+                      right: 60,
+                      child: Row(
 
+                        children: [
+                          Text(
+                            'ALREADY HAVE AN ACCOUNT?',
+                            style: TextStyle(
+                                color: Color(0xffA1A4B2),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400),
+                          ),
+                          TextButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => createPage()));
 
+                              },
+                              child: Text(
+                                'SIGN UP',
+                                style: TextStyle(
+                                    color: Color(0xff8E97FD),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w400),
+                              ))
+                        ],
+                      ))
                 ],
               ),
             ),
