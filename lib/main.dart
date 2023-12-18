@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:meditaition_app/creatPage.dart';
-import 'package:meditaition_app/loginPage.dart';
+import 'package:meditaition_app/singIn.dart';
+import 'package:meditaition_app/singUp.dart';
+
 
 void main() {
   runApp(const MyApp());
