@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditaition_app/courseDetails.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -82,16 +83,18 @@ class Home extends StatelessWidget {
                                     fontWeight: FontWeight.w400,
                                     color: Color(0xffEBEAEC)),
                               ),
-                             const SizedBox(width: 30,),
-                             Stack(
-                               children: [
-                                 Image.asset('assets/img/start.png'),
-                                 const Padding(
-                                   padding: EdgeInsets.only(left: 15,top: 8),
-                                   child: Text('START'),
-                                 ),
-                               ],
-                             ),
+                              const SizedBox(
+                                width: 30,
+                              ),
+                              Stack(
+                                children: [
+                                  Image.asset('assets/img/start.png'),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 15, top: 8),
+                                    child: Text('START'),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         )
@@ -175,7 +178,7 @@ class Home extends StatelessWidget {
                 const SizedBox(
                   height: 112,
                 ),
-                Text(','),
+                const Text(','),
               ],
             ),
           ),
@@ -238,7 +241,13 @@ class Home extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Image.asset('assets/img/music.png'),
+                    InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CourseDetails(),
+                          ));
+                        },
+                        child: Image.asset('assets/img/music.png')),
                     const SizedBox(
                       height: 17,
                     ),
