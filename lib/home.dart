@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meditaition_app/courseDetails.dart';
 
+import 'medidate.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -166,7 +168,10 @@ class Home extends StatelessWidget {
                   height: 20,
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
+                  width: MediaQuery
+                      .of(context)
+                      .size
+                      .width,
                   height: 200,
                   child: ListView.builder(
                       itemCount: 6,
@@ -184,7 +189,10 @@ class Home extends StatelessWidget {
           ),
         ),
         bottomSheet: Container(
-          width: MediaQuery.of(context).size.width,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width,
           height: 112,
           decoration: BoxDecoration(color: Colors.white, boxShadow: [
             BoxShadow(color: Colors.black.withOpacity(0.3), blurRadius: 10)
@@ -226,7 +234,14 @@ class Home extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Image.asset('assets/img/meditation.png'),
+                    InkWell(
+
+                        onTap: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) =>
+                                  Medidate(),));
+                        },
+                        child: Image.asset('assets/img/meditation.png')),
                     const SizedBox(
                       height: 17,
                     ),
